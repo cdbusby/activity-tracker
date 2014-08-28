@@ -112,7 +112,7 @@ class TrackerApp {
     foreach ($obj as &$item) {
 
       $date = explode("-", $item->start_date);
-      $month = $date[1];
+      $month = (int) $date[1];
 
       $array[$month][] = $item;
 
